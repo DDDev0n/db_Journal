@@ -13,4 +13,5 @@ ENV MYSQL_USER=$MYSQL_USER
 ENV MYSQL_PASSWORD=$MYSQL_PASSWORD
 ENV MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD
 
+COPY my.cnf /etc/mysql/conf.d/my.cnf
 ADD data.sql /docker-entrypoint-initdb.d/
